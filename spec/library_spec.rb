@@ -33,6 +33,6 @@ RSpec.describe Library do
     jane_eyre = charlotte_bronte.write("Jane Eyre", "1847")
     villette = charlotte_bronte.write("Villette", "1853")
     library.add_author(charlotte_bronte)
-    expect(library.publication_time_frame(charlotte_bronte)).to eq({:start=>"1847", :end=>"1853"})
+    expect(library.publication_time_frame(charlotte_bronte)).to eq({:start=>1847, :end=>1853})
   end
 end
